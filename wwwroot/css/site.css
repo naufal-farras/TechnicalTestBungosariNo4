@@ -1,18 +1,45 @@
+:root {
+    --bni-primary: #005d69;
+    --bni-secondary: #2ca1af;
+    --bni-accent: #e7f9fa;
+    --bni-origin: orange;
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
+.separator {
+    border-left: 1px solid #000; /* Adjust color as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.separator-label {
+    background: #fff; /* Match the background color */
+    padding: 0 10px; /* Adjust padding as needed */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*body {
+    padding:20px;
+    margin:20px;
+}*/

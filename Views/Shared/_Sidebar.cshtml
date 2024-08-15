@@ -1,0 +1,28 @@
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-light-primary elevation-1">
+    <!-- Brand Logo -->
+    <a asp-action="Index" asp-controller="Home" class="brand-link">
+        <img src="@Url.Content("~/img/icons.png")" alt="Logo" class="brand-image"
+             style="opacity: 0.8" />
+        <span class="brand-text text-dark font-weight-bold"><b>Aplikasi Stok</b></span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <!-- Sidebar Menu -->
+
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-action="Index" asp-controller="Home">
+                        <i class="fas fa-box-open"></i>
+                        <p>Modul Stok</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>

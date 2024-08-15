@@ -1,50 +1,232 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Kliring Tools</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/plugins/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="~/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+    <!-- iCheck -->
+    <link rel="stylesheet" href="~/plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="~/plugins/jqvmap/jqvmap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="~/plugins/daterangepicker/daterangepicker.css" />
+    <!-- summernote -->
+    <link rel="stylesheet" href="~/plugins/summernote/summernote-bs4.min.css" />
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- CodeMirror -->
+    <link rel="stylesheet" href="~/plugins/codemirror/codemirror.css">
+    <link rel="stylesheet" href="~/plugins/codemirror/theme/monokai.css">
+    <!-- sweetalert -->
+    <link rel="stylesheet" href="~/plugins/sweetalert2/sweetalert2.min.css" />
+    <link rel="stylesheet" href="~/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="~/plugins/bs-stepper/css/bs-stepper.min.css" />
+    <link rel="stylesheet" href="~/plugins//ekko-lightbox//ekko-lightbox.css" />
+    <link rel="stylesheet" href="~/css/style.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TechnicalTestBungosariNo4</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Stock</a>
-                        </li>
-                       @*  <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li> *@
-                    </ul>
+
+<body class="hold-transition layout-fixed sidebar-collapse layout-navbar-fixed">
+    <div class="wrapper">
+        <partial name="_Navbar" />
+        <partial name="_Sidebar" />
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!--- content header --->
+            <partial name="_ContentHeader" />
+            <!--- /content header --->
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    @RenderBody()
                 </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+            </section>
+        </div>
+        <!-- Content Wrapper. Contains page content -->
+        <partial name="_Footer" />
+        <partial name="_SidebarCtrl" />
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - TechnicalTestBungosariNo4 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!-- Loading State-->
+    <div id="spinner" class="loading__container">
+        <div class="loading__spinner">
+            <p>Loading...</p>
+            <div class="loading__spinner-area spinner-first"></div>
+            <div class="loading__spinner-area spinner-second"></div>
+            <div class="loading__spinner-area spinner-third"></div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    </div>
+    <!-- jQuery -->
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="~/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge("uibutton", $.ui.button);
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="~/plugins/chart.js/chart.umd.min.js"></script>
+    <!-- Sparkline -->
+    <script src="~/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="~/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="~/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="~/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="~/plugins/moment/moment.min.js"></script>
+    <script src="~/plugins//moment/moment-with-locales.min.js"></script>
+    <script src="~/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="~/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="~/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="~/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="~/plugins/ekko-lightbox/ekko-lightbox.js"></script>
+    <script src="~/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/js/extension/datatable.editor.min.js"></script>
+    <script src="~/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/plugins/jszip/jszip.min.js"></script>
+    <script src="~/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="~/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="~/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <!-- bs-custom-file-input -->
+    <script src="~/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <!-- jquery-validation -->
+    <script src="~/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script src="~/plugins/jquery-validation/additional-methods.min.js"></script>
+    <!-- CodeMirror -->
+    <script src="~/plugins//sweetalert2/sweetalert2.all.min.js"></script>
+    <!-- Full Calendar -->
+    <script src="~/lib/fullcalendar/index.global.min.js"></script>
+    <script src="~/plugins/codemirror/codemirror.js"></script>
+    <script src="~/plugins/codemirror/mode/css/css.js"></script>
+    <script src="~/plugins/codemirror/mode/xml/xml.js"></script>
+    <script src="~/plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="~/plugins//bs-stepper/js/bs-stepper.min.js"></script>
+    <script src="~/plugins/select2/js/select2.min.js"></script>
+    <script src="https://cdn.datatables.net/fixedheader/3.2.4/js/dataTables.fixedHeader.min.js"></script>
+    <!-- csutom script --->
+    <script src="~/dist/js/adminlte.js"></script>
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    @*<script src="~/dist/js/demo.js"></script>*@
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    @*<script src="~/dist/js/pages/dashboard.js"></script>*@
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
- 
+    <script>
+
+        $(document).ready(function () {
+            //showNotif();
+            //UpdateData(showNotif);
+            $(".select2").select2();
+        });
+
+        function replacetitik(angka) {
+            var bil = angka;
+            var loop = Math.floor(angka.length / 3);
+            for (var i = 0; i < loop; i++) {
+                bil = bil.replace(',', '');
+            }
+            return bil;
+        }
+        function pad(num) {
+            return num.toString().padStart(2, '0');
+        }
+        function pluskoma(num) {
+            if (!num) {
+                return 0;
+            }
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        }
+        function formatNominal(nominal) {
+            const formatter = new Intl.NumberFormat('id-ID', {
+                style: "currency",
+                currency: "IDR"
+            });
+            return formatter.format(nominal);
+        }
+        moment.locale('id');
+        const commonDataTableConfig = {
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": false,
+            "scrollX": true,
+        }
+        const themesCards = ['card-info', 'card-primary', 'card-success', 'card-warning', 'card-default', 'card-danger'];
+        function SwalKonfirmasi() {
+            return new Promise((resolve, reject) => {
+                Swal.fire({
+                    title: 'Apakah anda yakin?',
+                    showDenyButton: true,
+                    showCancelButton: false,
+                    confirmButtonText: 'Yakin',
+                    denyButtonText: `Batal`,
+                }).then((result) => {
+                    resolve(result.isConfirmed);
+                })
+            })
+        }
+        $(document).ajaxStart(function () {
+            $("#spinner").fadeIn();
+            console.log("testIn");
+        });
+        $(document).ajaxStop(function () {
+            $("#spinner").fadeOut();
+            console.log("testOut");
+
+        });
+        $(document).ready(function () {
+            $("#spinner").hide();
+
+            $("input[data-type='nominal']").on("input", function (event) {
+                // skip for arrow keys
+                if (event.which >= 37 && event.which <= 40) return;
+                // format number
+                $(this).val(function (index, value) {
+                    return value
+                        .replace(/\D/g, "")
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                        ;
+                });
+            });
+
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

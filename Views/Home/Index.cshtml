@@ -40,8 +40,8 @@
                                 <tr>
                                     <td>@noRow</td>
                                     <td>@item2.inventoryItem.NamaProduk</td>
+                                    <td>Rp. @item2.inventoryItem.Harga.ToString("#,##0")</td>
                                     <td>@item2.QTY</td>
-                                    <td>@item2.inventoryItem.Harga</td>
                                     <td>
                                         <button data-id="@item2.Id" name="edit-inventory-in" data-toggle="modal" data-target="#m-inventory-in" class="btn btn-primary btn-sm">INBOND</button>
                                         <button data-id="@item2.Id" name="edit-inventory-out" data-toggle="modal" data-target="#m-inventory-out" class="btn btn-warning btn-sm">OUTBOND</button>
@@ -49,7 +49,7 @@
                                     </td>
                                 </tr>
                             }
-                           
+
                         }
                     </tbody>
                 </table>
@@ -62,34 +62,34 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-             <form id="formAddProduk">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Tambah Produk</h4>
-                    <button class="close" type="button" data-dismiss="modal"
-                        aria-label="Close" onclick="ClearScreen()">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="nama">Nama</label>
+            <form id="formAddProduk">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Tambah Produk</h4>
+                        <button class="close" type="button" data-dismiss="modal"
+                                aria-label="Close" onclick="ClearForm()">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
                             <input type="text" class="form-control" id="namaProduk" placeholder="Nama Produk" />
-                    </div>
-                    <div class="form-group">
-                        <label for="harga">Harga</label>
-                        <input type="text"  placeholder="Harga" id="Harga" class="form-control">
-                    </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="harga">Harga</label>
+                            <input type="text" placeholder="Harga" id="Harga" class="form-control">
+                        </div>
                         <div class="form-group">
                             <label for="qty">QTY</label>
                             <input type="number" placeholder="Qty" id="Qty" class="form-control">
                         </div>
-                </div>
-            </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Save</button>
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
 
             </form>
         </div>
@@ -119,10 +119,9 @@
                         icon: "success",
                         title: "Sukses",
                         text: "Data berhasil Ditambahkan",
+                    }).then(() => {
+                        location.reload();
                     });
-                    $("#formAddProduk").trigger('reset')
-                    table.ajax.reload()
-                    $("button[data-dismiss=modal]").click();
                 },
                 error: function () {
                     Swal.fire({
@@ -133,6 +132,9 @@
                 }
             });
         });
+
+        function ClearForm() {
+            $("#formAddProduk").trigger("reset");
+        }
     </script>
 }
- 

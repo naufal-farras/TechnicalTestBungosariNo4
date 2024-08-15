@@ -1,6 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Syncfusion.DocIO;
+using Syncfusion.DocIO.DLS;
+using Syncfusion.Pdf;
 using System;
+using Syncfusion.DocIORenderer;
 using System.Diagnostics;
 using TechnicalTestBungosariNo4.Models;
 
@@ -10,10 +15,13 @@ namespace TechnicalTestBungosariNo4.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly InventoryContext _context;
-        public HomeController(ILogger<HomeController> logger, InventoryContext context)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+
+        public HomeController(ILogger<HomeController> logger, InventoryContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
             _logger = logger;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public IActionResult Index()
@@ -148,6 +156,138 @@ namespace TechnicalTestBungosariNo4.Controllers
                 return BadRequest(msg);
             }
 
+        }
+
+        //Generate Report
+        public IActionResult GenerateReport(int Id)
+        {
+            try
+            {
+                var trans = _context.T_Transaksi.Include(x => x.inventoryItem).
+                    ToList().GroupBy(x => x.inventoryItem.Id).ToList();
+
+                string webRootPath = _webHostEnvironment.WebRootPath;
+                string filename = "TemplateHISTORYINVETORY.docx";
+
+                FileStream fileStreamPath = new FileStream(Path.Combine(webRootPath, filename), FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+                WordDocument document = new WordDocument(fileStreamPath, FormatType.Docx);
+                //Table
+                IWTextRange textRange;
+                WSection section = document.Sections[0];
+                WTable table = section.Tables[0] as WTable;
+                table.TableFormat.HorizontalAlignment = RowAlignment.Center;
+
+                WTableRow row;
+                WTableCell cell;
+
+                var no = 1;
+                foreach (var item in trans)
+                {
+                    row = table.AddRow(true, false);
+                    row.Height = 18;
+                    row.HeightType = TableRowHeightType.AtLeast;
+
+                    //No
+                    cell = row.AddCell();
+                    cell.AddParagraph().AppendText(no.ToString()).CharacterFormat.FontSize = 8;
+                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+                    no++;
+
+                    //EventId
+                    cell = row.AddCell();
+                    textRange = cell.AddParagraph().AppendText(DateTime.Now.ToString("MMMM", new System.Globalization.CultureInfo("id-ID")) + " " + DateTime.Now.Day.ToString() + "," + DateTime.Now.Year.ToString());
+                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    textRange.CharacterFormat.FontName = "Calibri";
+                    textRange.CharacterFormat.FontSize = 8;
+                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    //ValueDate
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(item.ValueDate?.ToString() ?? ("-"));
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    ////DepotId
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(item.DepotId?.ToString() ?? "-");
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    ////AccountId
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(item.NamaRekKredit.ToString());
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    ////BaseSecurityId
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(item.BestSecurityId?.ToString() ?? "-");
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    ////ExercisedQty
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(item.ExerciseQty.Value.ToString("#,##0"));
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    ////GrossAmount
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(Convert.ToInt64(item.NominalInstruksi).ToString("#,##0"));
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    ////TaxAmount
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(Convert.ToInt64(item.TaxAmount).ToString("#,##0"));
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    ////NetAmount
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText((Convert.ToInt64(item.NominalInstruksi) - (Convert.ToInt64(item.TaxAmount))).ToString("#,##0"));
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+                }
+
+                document.Replace("%TANGGAL%", DateTime.Now.Day.ToString(), false, true);
+                DocIORenderer render = new DocIORenderer();
+                //render.Settings.ChartRenderingOptions.ImageFormat = ExportImageFormat.Jpeg;
+                PdfDocument pdfDoc = render.ConvertToPDF(document);
+
+                MemoryStream stream = new MemoryStream();
+
+                pdfDoc.Save(stream);
+                stream.Position = 0;
+                pdfDoc.Close(true);
+                document.Close();
+                
+                string contentType = "application/pdf";
+                string filenamed = "Attachment_Kupon_"  + DateTime.Now.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("id-ID")) + ".pdf";
+                return File(stream, contentType, filenamed);
+
+            }
+            catch (Exception err)
+            {
+
+                return BadRequest(err.Message);
+            }
         }
         public IActionResult Privacy()
         {

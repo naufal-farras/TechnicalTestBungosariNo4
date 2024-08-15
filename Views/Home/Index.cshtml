@@ -134,7 +134,7 @@
 			<form id="formIn">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Tambah Produk</h4>
+						<h4 class="modal-title">inBound Produk</h4>
 						<button class="close" type="button" data-dismiss="modal"
 								aria-label="Close" onclick="ClearForm()">
 							<span aria-hidden="true">&times;</span>
@@ -143,7 +143,8 @@
 					<div class="modal-body">
 						<div class="form-group">
 							<label for="nama">Nama</label>
-							<input type="hidden" class="form-control" id="idin"  />
+							<input type="hidden" class="form-control" id="idin" />
+							<input type="hidden" class="form-control" id="inventId" />
 
 							<input type="text" class="form-control" id="namaProduk" placeholder="Nama Produk" />
 						</div>
@@ -188,6 +189,8 @@
 						<div class="form-group">
 							<label for="nama">Nama</label>
 							<input type="text" class="form-control" id="namaProduk" placeholder="Nama Produk" />
+							<input type="hidden" class="form-control" id="idout" />
+							<input type="hidden" class="form-control" id="inventIdout" />
 						</div>
 						<div class="form-group">
 							<label for="harga">Harga</label>
@@ -196,6 +199,10 @@
 						<div class="form-group">
 							<label for="qty">QTY</label>
 							<input type="number" placeholder="Qty" id="Qty" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="dateoutBound">outBoundDate</label>
+							<input type="datetime-local" placeholder="dateoutBound" id="dateoutBound" class="form-control">
 						</div>
 					</div>
 					<div class="modal-footer">
@@ -252,7 +259,6 @@
 						title: "Sukses",
 						text: "Data berhasil Ditambahkan",
 					}).then(() => {
-						location.reload();
 					});
 				},
 				error: function () {
@@ -294,9 +300,7 @@
 				}
 			})
 		}
-		function ClearForm() {
-			$("#formAddProduk").trigger("reset");
-		}
+		 
 		function inBond(id) {
 			$("#formIn").data("id", id)
 			$.ajax({
@@ -309,6 +313,7 @@
 					$("#formIn #Harga").val(data.inventoryItem.harga)
 					$("#formIn #Qty").val(data.qty)
 					$("#formIn #idin").val(id)
+					$("#formIn #inventId").val(data.inventoryItemId)
 
 				}
 			});
@@ -316,15 +321,30 @@
 		@* in Produk *@
 			$("#formIn").on('submit', function (event) {
 				var id = $("#formIn #idin").val();
+				var inventid = $("#formIn #inventId").val();
+
 				event.preventDefault();
+				let dateTimeString = $("#formIn #dateInBound").val();
+				let dateTime = new Date(dateTimeString);
+				// Pad single digits with leading zeros
+				function padZero(value) {
+					return value < 10 ? '0' + value : value;
+				}
+
+				let formattedDate = dateTime.getFullYear() + "-" +
+					padZero(dateTime.getMonth() + 1) + "-" + // Months are zero-based, so add 1
+					padZero(dateTime.getDate()) + " " +
+					padZero(dateTime.getHours()) + ":" +
+					padZero(dateTime.getMinutes()) + ":" +
+					padZero(dateTime.getSeconds());
+
 				const Transaksi = {
-					id,
 					Type: 1,
 					QTY: $("#formIn #Qty").val(),
-					inOutBoundDate: $("#formIn #dateInBound").val(),
-				}
-				// console.log(Transaksi)
-				// return;
+					inOutBoundDate: formattedDate,
+					inventoryItemId: inventid,
+						}
+				console.log(Transaksi)
 				$.ajax({
 					url: "@Url.Action("PostTransaksi", "Home")",
 					type: "POST",
@@ -336,9 +356,8 @@
 							text: 'InBound berhasil',
 							icon: 'success'
 						});
-						$("#t-inventory").DataTable().ajax.reload();
-						$("button[data-dismiss=modal]").click();
-						ClearScreen();
+						location.reload();
+
 					},
 					error: function () {
 						Swal.fire({
@@ -346,8 +365,80 @@
 							text: 'InBound Gagal',
 							icon: 'error '
 						})
+
 					}
+
 				})
 			})
-	</script>
+
+		function outBond(id) {
+			$("#formOut").data("id", id)
+			$.ajax({
+				type: "GET",
+				url: "@Url.Action("GetById", "Home")/" + id,
+				dataType: "json",
+				success: function (data) {
+					console.log(data)
+					$("#formOut #namaProduk").val(data.inventoryItem.namaProduk);
+					$("#formOut #Harga").val(data.inventoryItem.harga)
+					$("#formOut #Qty").val(data.qty)
+					$("#formOut #idout").val(id)
+					$("#formOut #inventIdout").val(data.inventoryItemId)
+
+				}
+			});
+		}
+		@* in Produk *@
+			$("#formOut").on('submit', function (event) {
+				var id = $("#formOut #idout").val();
+				var inventid = $("#formOut #inventIdout").val();
+
+				event.preventDefault();
+				let dateTimeString = $("#formOut #dateoutBound").val();
+				let dateTime = new Date(dateTimeString);
+				// Pad single digits with leading zeros
+				function padZero(value) {
+					return value < 10 ? '0' + value : value;
+				}
+
+				let formattedDate = dateTime.getFullYear() + "-" +
+					padZero(dateTime.getMonth() + 1) + "-" + // Months are zero-based, so add 1
+					padZero(dateTime.getDate()) + " " +
+					padZero(dateTime.getHours()) + ":" +
+					padZero(dateTime.getMinutes()) + ":" +
+					padZero(dateTime.getSeconds());
+
+				const Transaksi = {
+					Type: 2,
+					QTY: $("#formOut #Qty").val(),
+					inOutBoundDate: formattedDate,
+					inventoryItemId: inventid,
+				}
+				console.log(Transaksi)
+				$.ajax({
+					url: "@Url.Action("PostTransaksi", "Home")",
+					type: "POST",
+					dataType: 'json',
+					data: Transaksi,
+					success: function () {
+						Swal.fire({
+							title: "Berhasil",
+							text: 'InBound berhasil',
+							icon: 'success'
+						});
+						location.reload();
+
+					},
+					error: function () {
+						Swal.fire({
+							title: "Gagal",
+							text: 'InBound Gagal',
+							icon: 'error '
+						})
+
+					}
+
+				})
+			})
+				</script>
 }

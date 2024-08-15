@@ -167,11 +167,9 @@ namespace TechnicalTestBungosariNo4.Controllers
                     ToList().GroupBy(x => x.inventoryItem.Id).ToList();
 
                 string webRootPath = _webHostEnvironment.WebRootPath;
-                string path = Path.Combine(webRootPath, "file", "Dokumen");
-                string pathQR = Path.Combine(webRootPath, "GeneratedQRCode");
-                string filename = "TemplateKupon.docx";
+                string filename = "TemplateHISTORYINVETORY.docx";
 
-                FileStream fileStreamPath = new FileStream(Path.Combine(path, filename), FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+                FileStream fileStreamPath = new FileStream(Path.Combine(webRootPath, filename), FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
                 WordDocument document = new WordDocument(fileStreamPath, FormatType.Docx);
                 //Table
                 IWTextRange textRange;

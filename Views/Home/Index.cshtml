@@ -5,7 +5,22 @@
 @{
 	ViewData["Title"] = "Inventory Page";
 	int noRow = 0;
-	var Data = _context.T_Transaksi.Include(x => x.inventoryItem).Where(x => x.isDeleted == false).ToList().GroupBy(x => x.inventoryItem.Id).ToList();
+	var Data = _context.M_Produk
+		.Where(p => !p.isDeleted)
+		.GroupJoin(
+			_context.T_Transaksi.Where(t => !t.isDeleted),
+			p => p.Id,
+			t => t.inventoryItemId,
+			(p, transactions) => new
+			{
+				Id = transactions.FirstOrDefault().Id,
+				NamaProduk = p.NamaProduk,
+				Harga = p.Harga,
+				Inbound = transactions.Where(x => x.Type == 1).ToList(),
+				Outbond = transactions.Where(x => x.Type == 2).ToList(),
+			}
+		)
+		.ToList();
 }
 
 <div class="row pt-3">
@@ -34,21 +49,18 @@
 					<tbody>
 						@foreach (var item in Data)
 						{
-							foreach (Transaksi item2 in item)
-							{
-								noRow++;
-								<tr>
-									<td>@noRow</td>
-									<td>@item2.inventoryItem.NamaProduk</td>
-									<td>Rp. @item2.inventoryItem.Harga.ToString("#,##0")</td>
-									<td>@item2.QTY</td>
-									<td>
-										<button onclick="inBond(@item2.Id)" data-toggle="modal" data-target="#exampleModalin" class="btn btn-primary btn-sm">INBOND</button>
-										<button onclick="outBond(@item2.Id)" data-toggle="modal" data-target="#exampleModalout" class="btn btn-warning btn-sm">OUTBOND</button>
-										<button type="button" onclick="Delete(@item2.Id)" class="btn btn-danger btn-sm">DELETED</button>
-									</td>
-								</tr>
-							}
+							noRow++;
+							<tr>
+								<td>@noRow</td>
+								<td>@item.NamaProduk</td>
+								<td>Rp. @item.Harga.ToString("#,##0")</td>
+								<td>@(item.Inbound.Count() - @item.Outbond.Count())</td>
+								<td>
+									<button onclick="inBond(@item.Id)" data-toggle="modal" data-target="#exampleModalin" class="btn btn-primary btn-sm">INBOND</button>
+									<button onclick="outBond(@item.Id)" data-toggle="modal" data-target="#exampleModalout" class="btn btn-warning btn-sm">OUTBOND</button>
+									<button type="button" onclick="Delete(@item.Id)" class="btn btn-danger btn-sm">DELETED</button>
+								</td>
+							</tr>
 
                         }
                     </tbody>

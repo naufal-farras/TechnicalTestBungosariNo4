@@ -5,7 +5,7 @@
 @{
 	ViewData["Title"] = "Inventory Page";
 	int noRow = 0;
-	var Data = _context.T_Transaksi.Include(x => x.inventoryItem).ToList().GroupBy(x => x.inventoryItem.Id).ToList();
+	var Data = _context.T_Transaksi.Include(x => x.inventoryItem).Where(x => x.isDeleted == false).ToList().GroupBy(x => x.inventoryItem.Id).ToList();
 }
 
 <div class="row pt-3">
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<table class="table table-striped table-hover table-bordered" id="t-rekening">
+				<table class="table table-striped table-hover table-bordered" id="t-inventory">
 					<thead>
 						<tr>
 							<th>No</th>
@@ -45,7 +45,7 @@
 									<td>
 										<button onclick="inBond(@item2.Id)" data-toggle="modal" data-target="#exampleModalin" class="btn btn-primary btn-sm">INBOND</button>
 										<button onclick="outBond(@item2.Id)" data-toggle="modal" data-target="#exampleModalout" class="btn btn-warning btn-sm">OUTBOND</button>
-										<button type="button" onclick="Hapus(@item2.Id)" class="btn btn-danger btn-sm">DELETED</button>
+										<button type="button" onclick="Delete(@item2.Id)" class="btn btn-danger btn-sm">DELETED</button>
 									</td>
 								</tr>
 							}
@@ -188,7 +188,6 @@
 			formData.NamaProduk = namaProduk;
 			formData.Harga = Harga;
 			formData.Qty = Qty;
-			console.log(formData);
 
 
 			$.ajax({
@@ -215,6 +214,35 @@
 			});
 		});
 
+		function Delete(id) {
+			const yakin = confirm("Anda yakin ??")
+			if (!yakin) return;
+			$.ajax({
+				type: "POST",
+				url: "@Url.Action("Delete", "Home")/" + id,
+				dataType: "json",
+				success: function (data) {
+					if (!data) {
+						return Swal.fire({
+							icon: "success",
+							title: "Sukses",
+							text: "Data berhasil DiHapus",
+						}).then(() => {
+
+						});
+					}
+					else {
+						Swal.fire({
+							icon: "success",
+							title: "Berhasil dihapus"
+						})
+					}
+
+					location.reload();
+
+				}
+			})
+		}
 		function ClearForm() {
 			$("#formAddProduk").trigger("reset");
 		}
@@ -244,27 +272,27 @@
 					QTY: $("#formIn #Qty").val(),
 					inOutBoundDate: $("#formIn #dateInBound").val(),
 				}
-				console.log(Transaksi)
-				return;
+				// console.log(Transaksi)
+				// return;
 				$.ajax({
 					url: "@Url.Action("PostTransaksi", "Home")",
 					type: "POST",
 					dataType: 'json',
-					data: data,
+					data: Transaksi,
 					success: function () {
 						Swal.fire({
 							title: "Berhasil",
-							text: 'Edit berhasil',
+							text: 'InBound berhasil',
 							icon: 'success'
 						});
-						$("#table-jabatan").DataTable().ajax.reload();
+						$("#t-inventory").DataTable().ajax.reload();
 						$("button[data-dismiss=modal]").click();
 						ClearScreen();
 					},
 					error: function () {
 						Swal.fire({
 							title: "Gagal",
-							text: 'Edit Gagal',
+							text: 'InBound Gagal',
 							icon: 'error '
 						})
 					}

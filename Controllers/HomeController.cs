@@ -50,7 +50,7 @@ namespace TechnicalTestBungosariNo4.Controllers
         {
             try
             {
-                var result = _context.T_Transaksi.Where(x => x.Id == Id).FirstOrDefault();
+                var result = _context.T_Transaksi.Include(x=>x.inventoryItem).Where(x => x.Id == Id).FirstOrDefault();
                 return Ok(result);
             }
             catch (Exception e)
@@ -65,7 +65,7 @@ namespace TechnicalTestBungosariNo4.Controllers
 
         }
 
-        public IActionResult PostTransaksi(Transaksi Transaksi, DateTime inoutdate, int Type)
+        public IActionResult PostTransaksi(Transaksi Transaksi)
         {
             try
             {
@@ -80,7 +80,7 @@ namespace TechnicalTestBungosariNo4.Controllers
                         .FirstOrDefault();
                     data.QTY = Transaksi.QTY;
                     data.Type = Transaksi.Type;
-                    data.inOutBoundDate = inoutdate;
+                    data.inOutBoundDate = Transaksi.inOutBoundDate;
                     data.UpdateDate = DateTime.Now;
                     _context.Entry(data).State = EntityState.Modified;
                 }

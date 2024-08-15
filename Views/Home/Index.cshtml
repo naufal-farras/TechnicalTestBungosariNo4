@@ -13,7 +13,6 @@
         <div class="card">
             <div class="card-header p-2">
                 <div class="d-flex justify-content-between">
-
                     <div class="card-title">STOK </div>
                     <button type="button" id="tambah-inven" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
                         <i class="fas fa-plus-circle mr-1"></i>Tambah Produk
@@ -53,6 +52,37 @@
                         }
                     </tbody>
                 </table>
+            </div>
+        </div>
+        <div class="row-mt-3">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Report</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Periode</label>
+                                <div class="col-sm-9">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">
+                                                <i class="far fa-calendar-alt"></i>
+                                            </span>
+                                        </div>
+                                        <input type="text" onchange="OnChangeDate()" class="form-control float-right" id="reservation" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 mb-2">
+                                <a id="downloadrekap" href="#" class="btn btn-danger"><i class="far fa-file-pdf"></i> Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -97,6 +127,25 @@
 </div>
 @section Scripts {
     <script>
+        $(document).ready(function () {
+            $("#reservation").daterangepicker();
+        })
+
+        function OnChangeDate() {
+            let daterangeVal = $("#reservation").val();
+            const $downloadBtn = $("#downloadrekap");
+
+            if (!daterangeVal) {
+                $downloadBtn.prop("disabled", true);
+                return alert("Tanggal tidak valid");
+            }
+            daterangeVal = daterangeVal.split("-").map(x => x.trim());
+            const startDate = moment(daterangeVal[0], "DD/MM/YYYY").format("YYYY-MM-DD");
+            const endDate = moment(daterangeVal[1], "DD/MM/YYYY").format("YYYY-MM-DD");
+
+            $downloadBtn.attr("href", `@Url.Action("GenerateReport", "Home")?dateStart=${startDate}&dateEnd=${endDate}`);
+        }
+
         const form = $("form#formAddProduk").on("submit", function (e) {
             e.preventDefault();
             const formData = {};

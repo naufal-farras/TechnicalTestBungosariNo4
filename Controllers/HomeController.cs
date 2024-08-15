@@ -31,16 +31,17 @@ namespace TechnicalTestBungosariNo4.Controllers
         public IActionResult GetTable()
         {
             var result = _context.M_Produk
-                .Where(p => !p.isDeleted) // Assuming you want to exclude deleted products
+                .Where(p => !p.isDeleted) 
                 .GroupJoin(
-                    _context.T_Transaksi.Where(t => !t.isDeleted), // Filtering non-deleted transactions
-                    p => p.Id,                                     // Key from M_Produk
-                    t => t.inventoryItemId,                        // Key from T_Transaksi
+                    _context.T_Transaksi.Where(t => !t.isDeleted), 
+                    p => p.Id,                                     
+                    t => t.inventoryItemId,                        
                     (p, transactions) => new
                     {
                         NamaProduk = p.NamaProduk,
                         Harga = p.Harga,
-                        SumQty = transactions.Sum(t => t.QTY)      // Summing quantities for each product
+                        Inbound = transactions.Where(x=>x.Type == 1).ToList().Count(),
+                        Outbond = transactions.Where(x=>x.Type == 2).ToList().Count(),
                     }
                 )
                 .ToList();

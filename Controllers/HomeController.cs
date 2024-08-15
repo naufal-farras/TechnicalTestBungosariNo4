@@ -30,7 +30,20 @@ namespace TechnicalTestBungosariNo4.Controllers
         }
         public IActionResult GetTable()
         {
-            var result = _context.T_Transaksi.Include(x => x.inventoryItem).ToList().GroupBy(x => x.inventoryItem.Id).ToList();
+            var result = _context.M_Produk
+                .Where(p => !p.isDeleted) // Assuming you want to exclude deleted products
+                .GroupJoin(
+                    _context.T_Transaksi.Where(t => !t.isDeleted), // Filtering non-deleted transactions
+                    p => p.Id,                                     // Key from M_Produk
+                    t => t.inventoryItemId,                        // Key from T_Transaksi
+                    (p, transactions) => new
+                    {
+                        NamaProduk = p.NamaProduk,
+                        Harga = p.Harga,
+                        SumQty = transactions.Sum(t => t.QTY)      // Summing quantities for each product
+                    }
+                )
+                .ToList();
             return Ok(new { data = result });
         }
         public IActionResult GetById(int Id)
@@ -165,7 +178,7 @@ namespace TechnicalTestBungosariNo4.Controllers
             {
                 var trans = _context.T_Transaksi
                     .Include(x => x.inventoryItem)
-                    .Where(x=>x.isDeleted == false && x.inOutBoundDate > dateStart && x.inOutBoundDate.AddDays(1) < dateEnd)
+                    .Where(x => x.isDeleted == false && x.inOutBoundDate >= dateStart && x.inOutBoundDate < dateEnd.AddDays(1))
                     .ToList();
 
                 string webRootPath = _webHostEnvironment.WebRootPath;
@@ -195,25 +208,9 @@ namespace TechnicalTestBungosariNo4.Controllers
                     cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
                     no++;
 
-                    //Cell : Trans Date
-                    cell = row.AddCell();
-                    textRange = cell.AddParagraph().AppendText(item.inOutBoundDate.ToString("yyyyMMdd"));
-                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-                    textRange.CharacterFormat.FontName = "Calibri";
-                    textRange.CharacterFormat.FontSize = 8;
-                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
-
                     //Cell: Nama Produk
                     cell = row.AddCell();
                     textRange = cell.AddParagraph().AppendText(item.inventoryItem.NamaProduk?.ToString() ?? "-");
-                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-                    textRange.CharacterFormat.FontName = "Calibri";
-                    textRange.CharacterFormat.FontSize = 8;
-                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
-
-                    //Cell : Quantity Stok
-                    cell = row.AddCell();
-                    textRange = cell.AddParagraph().AppendText(item.QTY.ToString());
                     textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
                     textRange.CharacterFormat.FontName = "Calibri";
                     textRange.CharacterFormat.FontSize = 8;
@@ -239,6 +236,30 @@ namespace TechnicalTestBungosariNo4.Controllers
                     }
                     cell = row.AddCell();
                     textRange = cell.AddParagraph().AppendText(types);
+                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    textRange.CharacterFormat.FontName = "Calibri";
+                    textRange.CharacterFormat.FontSize = 8;
+                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    //Cell : Quantity Stok
+                    cell = row.AddCell();
+                    textRange = cell.AddParagraph().AppendText(item.QTY.ToString());
+                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    textRange.CharacterFormat.FontName = "Calibri";
+                    textRange.CharacterFormat.FontSize = 8;
+                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    //Cell : Harga
+                    cell = row.AddCell();
+                    textRange = cell.AddParagraph().AppendText(item.inventoryItem.Harga.ToString("#,##0"));
+                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    textRange.CharacterFormat.FontName = "Calibri";
+                    textRange.CharacterFormat.FontSize = 8;
+                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+
+                    //Cell : Trans Date
+                    cell = row.AddCell();
+                    textRange = cell.AddParagraph().AppendText(item.inOutBoundDate.ToString("yyyyMMdd"));
                     textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
                     textRange.CharacterFormat.FontName = "Calibri";
                     textRange.CharacterFormat.FontSize = 8;

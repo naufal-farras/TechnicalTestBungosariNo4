@@ -1,0 +1,792 @@
+@P
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 1                                                                                    Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:53
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1.    000007436292     SAUDARA SENDIRI                          0000000000000002        10.671.444,00 RETUR YOUR REF T9892955060BF444 DD03JUN24 BENEFICIARY NAME MISMATCH            000000000000000
+        0330301                                                                      202406040011943089                                                                        TD Antar Nasaba 3       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  2.    0014DKOI04062400 SAUDARA SENDIRI                          0000000000000002         7.900.000,00 B777295456EBBD1 RETUR KU BNINIDJA NOREFF B777295456EBBD1ALS REKENING TIDAK ADATG00000000000000
+        1100323                                                                      202406040011943888 Data Outward dengan no.reff 'B777295456EBBD1' tidak ditemukan.         Reversal/Retur  5       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  3.    0014DKOI04062400 SAUDARA SENDIRI                          0000000000000002        15.700.000,00 B777295456EBBD1 RETUR KU BNINIDJA NOREFF B777295456EBBD1ALS REKENING TIDAK ADATG00000000000000
+        1100323                                                                      202406040011943888 Data Outward dengan no.reff 'B777295456EBBD1' tidak ditemukan.         Reversal/Retur  5       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  4.    00621240604DKOI0 SAUDARA SENDIRI                          0000000000000002         5.297.100,00 T989295503A6719F T989295503A6719F RETUR TGL 03 JUNI 2024 ALS REK CLOSED         00000000000000
+        1100323                                                                      202406040011942957                                                                        Reversal/Retur  3       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  5.    0372015774888335 Saudara Sendiri                          0000000000000002           115.000,00 B76629553BD4881A B76629553BD4881A_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011942896                                                                        Reversal/Retur  3       Penerusan Remita WNI
+                         Kami Sendiri                             NURI-23723
+
+  6.    0372015774983335 Saudara Sendiri                          0000000000000002         6.252.401,00 B76629553BC4D6F9 B76629553BC4D6F9_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011943260                                                                        Reversal/Retur  3       Penerusan Remita WNI
+                         Kami Sendiri                             Ais-31946
+
+  7.    0372015775276339 Saudara Sendiri                          0000000000000002         1.506.282,00 B76629553E0EFE1E B76629553E0EFE1E_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011943567                                                                        Reversal/Retur  4       Penerusan Remita WNI
+                         Kami Sendiri                             Ais-31946
+
+  8.    0372015775277336 Saudara Sendiri                          0000000000000002         2.091.752,00 B76629553E12680F B76629553E12680F_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011943567                                                                        Reversal/Retur  4       Penerusan Remita WNI
+                         Kami Sendiri                             NURI-23723
+
+  9.    0372015775278333 Saudara Sendiri                          0000000000000002        17.006.282,00 B76629553E0EFC04 B76629553E0EFC04_20240604_Rekening Salah                       00000000000000
+        0020307                                                                      202406040011943567                                                                        Reversal/Retur  4       Penerusan Remita WNI
+                         Kami Sendiri                             NURI-23723
+
+  10.   0372015775281330 Saudara Sendiri                          0000000000000002        40.191.100,00 T98929553E2DC32E T98929553E2DC32E_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011943567                                                                        Reversal/Retur  4       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  11.   0372015775282337 Saudara Sendiri                          0000000000000002        39.299.255,00 T98929553E30805E T98929553E30805E_20240604_REKENING SALAH                       00000000000000
+        0020307                                                                      202406040011943567                                                                        Reversal/Retur  4       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  12.   0372015775304338 Saudara Sendiri                          0000000000000002         3.000.000,00 T98929553E620BA0 T98929553E620BA0_20240604_Invalid Amount                       00000000000000
+        0020307                                                                      202406040011943568                                                                        Reversal/Retur  4       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 2                                                                                    Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  13.   0372015775494337 Saudara Sendiri                          0000000000000002            37.801,00 B76029553EE901F9 B76029553EE901F9_20240604_REK INACTIVE                         00000000000000
+        0020307                                                                      202406040011944048                                                                        Reversal/Retur  5       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  14.   0372015775537337 Saudara Sendiri                          0000000000000002           492.000,00 T98929553EE5FB16 T98929553EE5FB16_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011944495                                                                        Reversal/Retur  6       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  15.   0372015775620337 Saudara Sendiri                          0000000000000002       694.946.200,00 T98929553FE679DD T98929553FE679DD_20240604_REKENING SALAH                       00000000000000
+        0020307                                                                      202406040011944958                                                                        Reversal/Retur  7       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  16.   0372015775692333 Saudara Sendiri                          0000000000000002           316.637,00 T9892955402E296B T9892955402E296B_20240604_REK INACTIVE                         00000000000000
+        0020307                                                                      202406040011945023                                                                        Reversal/Retur  7       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  17.   0372015775701337 Saudara Sendiri                          0000000000000002        42.227.253,00 T98929553FDDDF71 T98929553FDDDF71_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945122                                                                        Reversal/Retur  7       Penduduk         WNI
+                         Kami Sendiri                             ida-27656
+
+  18.   0372015775722336 Saudara Sendiri                          0000000000000002         8.250.500,00 T98929554089ADCF T98929554089ADCF_20240604_REK VALAS                            00000000000000
+        0020307                                                                      202406040011945118                                                                        Reversal/Retur  7       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  19.   0372015775859338 Saudara Sendiri                          0000000000000002        35.079.795,00 T989295540A4BF8A T989295540A4BF8A_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945446                                                                        Reversal/Retur  8       Penduduk         WNI
+                         Kami Sendiri                             ida-27656
+
+  20.   0372015775860331 Saudara Sendiri                          0000000000000002       114.727.874,00 T989295540A4CC27 T989295540A4CC27_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945446                                                                        Reversal/Retur  8       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  21.   0372015775889336 Saudara Sendiri                          0000000000000002         9.100.000,00 T989295540B89AE2 T989295540B89AE2_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945514                                                                        Reversal/Retur  8       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  22.   0372015775897338 Saudara Sendiri                          0000000000000002        66.347.880,00 T989295540A49F8C T989295540A49F8C_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945617                                                                        Reversal/Retur  8       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  23.   0372015775932332 Saudara Sendiri                          0000000000000002           500.000,00 T98929554110DA92 T98929554110DA92_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945652                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  24.   0372015775933339 Saudara Sendiri                          0000000000000002            67.600,00 T9892955411127B6 T9892955411127B6_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945652                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             ida-27656
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 3                                                                                    Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  25.   0372015775957339 Saudara Sendiri                          0000000000000002           200.000,00 T9892955413073A0 T9892955413073A0_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945695                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             ida-27656
+
+  26.   0372015775958336 Saudara Sendiri                          0000000000000002           300.000,00 T989295541307E1C T989295541307E1C_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945695                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  27.   0372015775959333 Saudara Sendiri                          0000000000000002           600.000,00 T9892955413071D1 T9892955413071D1_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945695                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  28.   0372015775960336 Saudara Sendiri                          0000000000000002         3.389.009,00 T9892955413071A5 T9892955413071A5_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945695                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  29.   0372015775961333 Saudara Sendiri                          0000000000000002         2.889.009,00 T989295541307176 T989295541307176_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945695                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  30.   0372015775962330 Saudara Sendiri                          0000000000000002           175.000,00 T98929554130776B T98929554130776B_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945695                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  31.   0372015775963337 Saudara Sendiri                          0000000000000002           750.000,00 T9892955413074CF T9892955413074CF_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945695                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  32.   0372015775964334 Saudara Sendiri                          0000000000000002         2.300.000,00 T98929554130738D T98929554130738D_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945701                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             ida-27656
+
+  33.   0372015775965331 Saudara Sendiri                          0000000000000002           300.000,00 T98929554130744B T98929554130744B_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945701                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             ida-27656
+
+  34.   0372015775966338 Saudara Sendiri                          0000000000000002           225.000,00 T989295541307056 T989295541307056_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945701                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  35.   0372015775967335 Saudara Sendiri                          0000000000000002           325.000,00 T989295541307065 T989295541307065_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945701                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  36.   0372015775968332 Saudara Sendiri                          0000000000000002         2.300.000,00 T98929554130785D T98929554130785D_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945701                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 4                                                                                    Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  37.   0372015775969339 Saudara Sendiri                          0000000000000002           350.000,00 T989295541307D19 T989295541307D19_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945701                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  38.   0372015775970332 Saudara Sendiri                          0000000000000002         1.050.000,00 T989295541307DDC T989295541307DDC_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945701                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  39.   0372015775971339 Saudara Sendiri                          0000000000000002           675.000,00 T9892955413070A9 T9892955413070A9_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945701                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             ida-27656
+
+  40.   0372015776020331 Saudara Sendiri                          0000000000000002         1.950.000,00 T9892955415735A1 T9892955415735A1_20240604_REKENING SALAH                       00000000000000
+        0020307                                                                      202406040011945799                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             ida-27656
+
+  41.   0372015776028337 Saudara Sendiri                          0000000000000002       271.840.343,00 T989295541A9D57E T989295541A9D57E_20240604_NAMA BEDA                            00000000000000
+        0020307                                                                      202406040011945800                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  42.   0599009178771501 SAUDARA SENDIRI                          0000000000000002         1.715.164,00 T98929550514B748 T98929550514B748 - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942123                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  43.   0599009178771601 SAUDARA SENDIRI                          0000000000000002           374.400,00 T9892955056F187B T9892955056F187B - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942123                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  44.   0599009178772901 SAUDARA SENDIRI                          0000000000000002         3.669.008,00 B766295505719426 B766295505719426 - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942123                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  45.   0599009178773001 SAUDARA SENDIRI                          0000000000000002         5.245.868,00 B766295505719444 B766295505719444 - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942123                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  46.   0599009178780201 SAUDARA SENDIRI                          0000000000000002         9.538.564,00 T9892955058C5F3D T9892955058C5F3D - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942124                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  47.   0599009178780301 SAUDARA SENDIRI                          0000000000000002           777.000,00 T98929550590249C T98929550590249C - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942124                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  48.   0599009178780401 SAUDARA SENDIRI                          0000000000000002           471.750,00 T98929550590000E T98929550590000E - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942124                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 5                                                                                    Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  49.   0599009178780501 SAUDARA SENDIRI                          0000000000000002           832.500,00 T9892955058FFF64 T9892955058FFF64 - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942124                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  50.   0599009178780601 SAUDARA SENDIRI                          0000000000000002        19.423.800,00 T989295505A5CE68 T989295505A5CE68 - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942124                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  51.   0599009178796501 SAUDARA SENDIRI                          0000000000000002           580.000,00 T989295506153942 T989295506153942 - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942127                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  52.   0599009178796601 SAUDARA SENDIRI                          0000000000000002           580.000,00 T989295506153923 T989295506153923 - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942127                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  53.   0599009178796701 SAUDARA SENDIRI                          0000000000000002           580.000,00 T989295506153935 T989295506153935 - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942127                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  54.   0599009178796801 SAUDARA SENDIRI                          0000000000000002         2.381.400,00 T9892955063DB6C6 T9892955063DB6C6 - RETUR 030624                                00000000000000
+        0080017                                                                      202406040011942127                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  55.   0599009178799501 SAUDARA SENDIRI                          0000000000000002           150.000,00 T98929553C4AEB80 T98929553C4AEB80 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011943349                                                                        Reversal/Retur  4       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  56.   0599009178802301 SAUDARA SENDIRI                          0000000000000002        11.065.648,00 B76629553BC3B386 B76629553BC3B386 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011943349                                                                        Reversal/Retur  4       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  57.   0599009178802401 SAUDARA SENDIRI                          0000000000000002         9.000.000,00 B76629553BD5381A B76629553BD5381A - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011943349                                                                        Reversal/Retur  4       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  58.   0599009178802501 SAUDARA SENDIRI                          0000000000000002           578.842,00 B76629553BD4DFF5 B76629553BD4DFF5 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011943349                                                                        Reversal/Retur  4       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  59.   0599009178814601 SAUDARA SENDIRI                          0000000000000002           475.713,00 B76629553D7E3C02 B76629553D7E3C02 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011943357                                                                        Reversal/Retur  4       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  60.   0599009178819101 SAUDARA SENDIRI                          0000000000000002       868.278.608,00 T98929553DB7C108 T98929553DB7C108 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945163                                                                        Reversal/Retur  8       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 6                                                                                    Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  61.   0599009178819201 SAUDARA SENDIRI                          0000000000000002       732.500.000,00 T98929553E302DFB T98929553E302DFB - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945163                                                                        Reversal/Retur  8       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  62.   0599009178828701 SAUDARA SENDIRI                          0000000000000002       274.653.760,00 T98929553E65617A T98929553E65617A - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945164                                                                        Reversal/Retur  8       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  63.   0599009178842201 SAUDARA SENDIRI                          0000000000000002       333.416.250,00 T98929553ED9FE86 T98929553ED9FE86 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945058                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  64.   0599009178842301 SAUDARA SENDIRI                          0000000000000002         7.197.100,00 T98929553EC9F0F6 T98929553EC9F0F6 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945058                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  65.   0599009178842401 SAUDARA SENDIRI                          0000000000000002           175.000,00 T98929553EC94EAF T98929553EC94EAF - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945058                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  66.   0599009178846301 SAUDARA SENDIRI                          0000000000000002         6.268.500,00 T98929553EE82C20 T98929553EE82C20 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945058                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  67.   0599009178846401 SAUDARA SENDIRI                          0000000000000002        12.313.125,00 T98929553EE81A2F T98929553EE81A2F - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945058                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  68.   0599009178846501 SAUDARA SENDIRI                          0000000000000002           492.000,00 T98929553EE5F8C2 T98929553EE5F8C2 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945058                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  69.   0599009178849001 SAUDARA SENDIRI                          0000000000000002         2.200.237,00 B76029553EE900C2 B76029553EE900C2 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945058                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  70.   0599009178852201 SAUDARA SENDIRI                          0000000000000002         2.450.000,00 T98929553F603A30 T98929553F603A30 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945059                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  71.   0599009178852301 SAUDARA SENDIRI                          0000000000000002           185.101,00 T98929553F775FAC T98929553F775FAC - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945059                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  72.   0599009178852401 SAUDARA SENDIRI                          0000000000000002         2.000.000,00 T98929553F64FBE7 T98929553F64FBE7 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945059                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 7                                                                                    Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  73.   0599009178852501 SAUDARA SENDIRI                          0000000000000002        12.737.100,00 T98929553F75E1AB T98929553F75E1AB - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945059                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  74.   0599009178856201 SAUDARA SENDIRI                          0000000000000002        48.084.100,00 T98929553FDDDF7C T98929553FDDDF7C - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945059                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  75.   0599009178858401 SAUDARA SENDIRI                          0000000000000002        12.280.848,00 B76629553FF929CF B76629553FF929CF - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945744                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  76.   0599009178861401 SAUDARA SENDIRI                          0000000000000002         1.641.000,00 T98929553FFC9178 T98929553FFC9178 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945744                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  77.   0599009178866401 SAUDARA SENDIRI                          0000000000000002         6.256.016,00 T9892955407324FD T9892955407324FD - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945744                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  78.   0599009178869301 SAUDARA SENDIRI                          0000000000000002         2.007.073,00 B766295540184454 B766295540184454 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945745                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  79.   0599009178873601 SAUDARA SENDIRI                          0000000000000002        24.500.000,00 T989295540A382EC T989295540A382EC - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945745                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  80.   0599009178873701 SAUDARA SENDIRI                          0000000000000002        15.980.000,00 T989295540A601C9 T989295540A601C9 - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945745                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  81.   0599009178886301 SAUDARA SENDIRI                          0000000000000002       315.848.034,00 T9892955411CF42F T9892955411CF42F - RETUR 040624                                00000000000000
+        0080017                                                                      202406040011945779                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  82.   088822407612620  SAUDARA SENDIRI                          0000000000000002            29.790,00 T98929553EE5C90E RETUR LLG TGL 04/06/2024 NO REFF T98929553EE5C90E ALS NAMA KURA00000000000000
+        4840017                                                                      202406040011944597                                                                        Reversal/Retur  6       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  83.   102024060481439  Saudara Sendiri                          0000000000000002        17.000.000,00 T98929553EC732E2 T98929553EC732E2-Invalid Account Number RTR TGLHI BUKAN UNTUK K00000000000000
+        0010016                                                                      202406040011945806                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Bank Indonesia                           Ais-31946
+
+  84.   240604B1P400101  SAUDARA SENDIRI                          0000000000000003            40.000,00 0 RETUR LLG TGL 04/06/24;NO REFF:T99629553D8496FC    ALS.NO REKENING TDK DITEMUK00000000000000
+        5620016          ACCOUNT NOT FOUND                                           202406040011943638 Panjang rekening kurang dari 14 digit                                  Reversal/Retur  4       Penduduk         WNI
+                         (R)KAMI SENDIRI                          NURI-23723
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 8                                                                                    Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  85.   50DO04062024002K Saudara Sendiri                          0000000000000002       186.278.300,00 T98929553DCB84CF RET T98929553DCB84CF_04/06/24_NAMA BEDA                        00000000000000
+        1120015                                                                      202406040011943682                                                                        Reversal/Retur  4       Penduduk         WNI
+                         Kami Sendiri                             NURI-23723
+
+  86.   999950696650     SAUDARA SENDIRI                          0000000000000002        89.770.579,00 T989295540BF4B24 T989295540BF4B24/20240604/Rekening salah                       00000000000000
+        1200016                                                                      202406040011945678                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAS BLUD RSUD BAYUNG LENCIR              ida-27656
+
+  87.   BJBS_24060400007 SAUDARA SENDIRI                          0000000000000002        53.270.896,00 T98929553F7FCD7E RETUR REFF & T98929553F7FCD7E & 2024-06-04 & Rekening Tidak Dit00000000000000
+        4250018                                                                      202406040011945142                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  88.   BNKFT2415607GW8  SAUDARA SENDIRI                          0000000000000002           674.590,00 T98929553E3B4649 T98929553E3B4649 /20240604/ REKENING TUTUP                     00000000000000
+        1220012                                                                      202406040011943897                                                                        Reversal/Retur  5       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  89.   BNKFT24156P4252  KEMENAG 426211                           0000000000000002           492.000,00 T98929553EE5F060 REKENING TIDAK TERDAFTAR T98929553EE5F060-20240604             00000000000000
+        4510017                                                                      202406040011944185                                                                        Reversal/Retur  5       Penduduk         WNI
+                         SAUDARA SENDIRI                          ida-27656
+
+  90.   BNKFT24156S8W8D  BPP 019 PPK PPN X                        0000000000000002         1.500.000,00 T98929553F660854 REK TDK AKTIF T98929553F660854-20240604                        00000000000000
+        4510017                                                                      202406040011945291                                                                        Reversal/Retur  8       Penduduk         WNI
+                         SAUDARA SENDIRI                          ida-27656
+
+  91.   BNKFT24156YW54T  PT LENGGOGENI PLANNING DESIGNINGENG      0000000000000002           865.800,00 T9892955408849A1 NAMA BEDA T9892955408849A1-20240604                            00000000000000
+        4510017                                                                      202406040011945802                                                                        Reversal/Retur  9       Penduduk         WNI
+                         SAUDARA SENDIRI                          Ais-31946
+
+  92.   CMB6243372760500 PT ADITYA MANDIRI SEJAHTERA              0000000000000002         1.860.480,00 T989295505AE6E65 REFF T989295505AE6E65 TGL 030624 D/A NO TGH TDK SESUAI         00000000000000
+        0220026                                                                      202406040011942228                                                                        Reversal/Retur  2       Penduduk         WNI
+                         ADITYA MANDIRI SEJAHTERA                 Ais-31946
+
+  93.   CMB6243388613200 MOHAMAD NUR SANUSI                       0000000000000002         3.132.487,00 B76029553EE901AB REFF B76029553EE901AB TGL 040624 D/A REK SALAH                 00000000000000
+        0220026                                                                      202406040011944895                                                                        Reversal/Retur  7       Penduduk         WNI
+                         REKSA DANA SYARIAH MAJORIS SUKUK NEGARA  NURI-23723
+
+  94.   CMB6243394166300 PT AIA FINANCIAL                         0000000000000002       207.396.300,00 T989295540ACB0BF REFF T989295540ACB0BF TGL 040624 D/A REK SALAH                 00000000000000
+        0220026                                                                      202406040011945763                                                                        Reversal/Retur  9       Penduduk         WNI
+                         RICOH THERMAL MEDIA EAST ASIA PACIFIC    Ais-31946
+
+  95.   GID6514156800746 Saudara sendiri                          0000000000000002        26.706.743,00 T989295540C1D8D0 T989295540C1D8D0.RETURN YR REF DD 04062024 DUE TO RT16 - Incorr00000000000000
+        0320308                                                                      202406040011945766                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami sendiri                             ida-27656
+
+  96.   KPO09            SAUDARA SENDIRI                          0000000000000002         4.155.855,00 B76629553E61EEE8 REFF B76629553E61EEE8 TGL 04.06.2024 REK & NAMA TDK TERDAFTAR, 00000000000000
+        4940014                                                                      202406040011943780                                                                        Reversal/Retur  5       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 9                                                                                    Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  97.   LP JAK42BVG6     SAUDARA SENDIRI                          0000000000000002         1.450.000,00 T989295417 T9892954173F6340   240530 ADMINISTRASI                               00000000000000
+        0870010                                                                      202406040011941827                                                                        Reversal/Retur  1       Penduduk         WNI
+                         GSM SYSTEMS INDONESIA                    ida-27656
+
+  98.   LP JAK42BW3Z     SAUDARA SENDIRI                          0000000000000002         3.000.000,00 REF B76629553E137F1E TGL 240604 REF B76629553E137F1E TGL 240604 * D/A REKENING V00000000000000
+        0870010                                                                      202406040011944183                                                                        Reversal/Retur  5       Penduduk         WNI
+                         VERINA PANG                              ida-27656
+
+  99.   OPRT060494378435 SAUDARA SENDIRI                          0000000000000002        54.124.500,00 T98929553EE67FA5 T98929553EE67FA5 RET LLG SDR TGL.04/06/2024 D/A.:Account Not Fo00000000000000
+        5010011                                                                      202406040011944057                                                                        Reversal/Retur  5       Bukan Penduduk   WNI
+                         KAMI SENDIRI                             ida-27656
+
+  100.  OPRT060494379853 SAUDARA SENDIRI                          0000000000000001        12.081.587,00 B76029553EE90418 B76029553EE90418 RET LLG SDR TGL.04/06/2024 D/A.:CLOSED/BLOCKED00000000000000
+        5420012          ACCOUNT NOT FOUND                                           202406040011943909                                                                        Reversal/Retur  5       Bukan Penduduk   WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  101.  OPRT060494379879 SAUDARA SENDIRI                          0000000000000001            18.491,00 B76029553EE904CC B76029553EE904CC RET LLG SDR TGL.04/06/2024 D/A.:Akun / Rekenin00000000000000
+        5420012          ACCOUNT NOT FOUND                                           202406040011943909                                                                        Reversal/Retur  5       Bukan Penduduk   WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  102.  OPRT060494444815 SAUDARA SENDIRI                          0000000000000002       225.842.026,00 T98929553F8DFE6D T98929553F8DFE6D RET LLG SDR TGL.04/06/2024 D/A.:Account Not Fo00000000000000
+        5010011                                                                      202406040011944786                                                                        Reversal/Retur  7       Bukan Penduduk   WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  103.  OPRT060494484223 SAUDARA SENDIRI                          0000000000000001            94.824,00 T9892955402E28C9 T9892955402E28C9 RET LLG SDR TGL.04/06/2024 D/A.:Akun / Rekenin00000000000000
+        5420012          ACCOUNT NOT FOUND                                           202406040011945156                                                                        Reversal/Retur  7       Bukan Penduduk   WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  104.  OPRT060494571668 SAUDARA SENDIRI                          0000000000000002         9.918.000,00 T989295541BBF654 T989295541BBF654 RET LLG SDR TGL.04/06/2024 D/A.:Nomor Rekening00000000000000
+        0160131                                                                      202406040011945814                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Maybank Indonesia                        Ais-31946
+
+  105.  PDJTIDJ1I0000000 Saudara Sendiri                          0000000000000002            67.600,00 T98929554108CDAF T98929554108CDAF/20240604/REKENING TIDAK TERDAFTAR             00000000000000
+        1140383                                                                      202406040011945816                                                                        Reversal/Retur  9       Penduduk         WNI
+                         Kami Sendiri                             Ais-31946
+
+  106.  RET0005240604001 SAUDARA SENDIRI                          0000000000000002         9.915.760,00 T98929553EE5D4D9 RETUR LLG TGL.04-06-2024 NO REF. T98929553EE5D4D9              00000000000000
+        0130475                                                                      202406040011944514                                                                        Reversal/Retur  6       Penduduk         WNI
+                         BANK PERMATA                             ida-27656
+
+  107.  RET0005240604001 SAUDARA SENDIRI                          0000000000000002       310.650.000,00 T98929553EFCEA02 RETUR LLG TGL.04-06-2024 NO REF. T98929553EFCEA02              00000000000000
+        0130475                                                                      202406040011944514                                                                        Reversal/Retur  6       Penduduk         WNI
+                         BANK PERMATA                             NURI-23723
+
+  108.  RET0005240604001 SAUDARA SENDIRI                          0000000000000002        21.078.400,00 B76629553F77DB74 RETUR LLG TGL.04-06-2024 NO REF. B76629553F77DB74              00000000000000
+        0130475                                                                      202406040011944514                                                                        Reversal/Retur  6       Penerusan Remita WNI
+                         BANK PERMATA                             NURI-23723
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 10                                                                                   Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  109.  RET0773240603000 SAUDARA SENDIRI                          0000000000000002           972.100,00 T9892955063406AB RETUR LLG TGL.03-06-2024 NO REF. T9892955063406AB              00000000000000
+        0139926                                                                      202406040011941487                                                                        Reversal/Retur  1       Penduduk         WNI
+                         BANK PERMATA                             ida-27656
+
+  110.  RT20240604000056 SAUDARA SENDIRI                          0000000000000002        10.997.100,00 T98929553C5A929B T98929553C5A929B 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011941835                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  111.  RT20240604000057 SAUDARA SENDIRI                          0000000000000002            80.839,00 B76629553BD487BB B76629553BD487BB 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011941835                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  112.  RT20240604000058 SAUDARA SENDIRI                          0000000000000002        60.000.000,00 B76629553BDA5DF1 B76629553BDA5DF1 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011941835                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  113.  RT20240604000059 SAUDARA SENDIRI                          0000000000000002         6.663.172,00 B76629553BC3A820 B76629553BC3A820 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011941835                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  114.  RT20240604000060 SAUDARA SENDIRI                          0000000000000002           279.356,00 B76629553BB3F960 B76629553BB3F960 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011941835                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  115.  RT20240604000061 SAUDARA SENDIRI                          0000000000000002         1.895.820,00 B76629553BE9E36B B76629553BE9E36B 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011941835                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  116.  RT20240604000062 SAUDARA SENDIRI                          0000000000000002         7.104.552,00 B76629553BB391F2 B76629553BB391F2 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011941835                                                                        Reversal/Retur  1       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  117.  RT20240604000308 SAUDARA SENDIRI                          0000000000000002        64.914.060,00 B76629553D7DC886 B76629553D7DC886 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011942630                                                                        Reversal/Retur  2       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  118.  RT20240604000509 SAUDARA SENDIRI                          0000000000000002           377.400,00 T98929553D9CDC17 T98929553D9CDC17 06/04/2024 NO.REK TDK TERDAFTAR               00000000000000
+        0140397                                                                      202406040011943371                                                                        Reversal/Retur  4       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  119.  RT20240604000591 SAUDARA SENDIRI                          0000000000000002         1.565.000,00 T98929553EC62A11 T98929553EC62A11 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011943615                                                                        Reversal/Retur  4       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  120.  RT20240604000657 SAUDARA SENDIRI                          0000000000000002        16.428.000,00 T98929553EC8B9CF T98929553EC8B9CF 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011943757                                                                        Reversal/Retur  5       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 11                                                                                   Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  121.  RT20240604000692 SAUDARA SENDIRI                          0000000000000002         7.079.670,00 T98929553EFD390A T98929553EFD390A 06/04/2024 NO.REK TDK TERDAFTAR               00000000000000
+        0140397                                                                      202406040011943887                                                                        Reversal/Retur  5       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  122.  RT20240604000718 SAUDARA SENDIRI                          0000000000000002        18.597.100,00 T98929553F451303 T98929553F451303 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011944010                                                                        Reversal/Retur  5       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  123.  RT20240604000820 SAUDARA SENDIRI                          0000000000000002        14.893.100,00 T98929553F65EBCF T98929553F65EBCF 06/04/2024 NO.REK TDK TERDAFTAR               00000000000000
+        0140397                                                                      202406040011944438                                                                        Reversal/Retur  6       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  124.  RT20240604000879 SAUDARA SENDIRI                          0000000000000002       165.000.000,00 T98929553F8CFFD2 T98929553F8CFFD2 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011944582                                                                        Reversal/Retur  6       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  125.  RT20240604000948 SAUDARA SENDIRI                          0000000000000002         3.379.640,00 T98929554004CBC2 T98929554004CBC2 06/04/2024 NO.REK TDK TERDAFTAR               00000000000000
+        0140397                                                                      202406040011944715                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  126.  RT20240604000949 SAUDARA SENDIRI                          0000000000000002         3.125.000,00 T9892955400635FF T9892955400635FF 06/04/2024 NO.REK TDK TERDAFTAR               00000000000000
+        0140397                                                                      202406040011944715                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  127.  RT20240604000950 SAUDARA SENDIRI                          0000000000000002        14.900.000,00 T989295540064956 T989295540064956 06/04/2024 NO.REK TDK TERDAFTAR               00000000000000
+        0140397                                                                      202406040011944715                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  128.  RT20240604000962 SAUDARA SENDIRI                          0000000000000002       259.908.480,00 T98929553FFCD418 T98929553FFCD418 06/04/2024 NO.REK TDK TERDAFTAR               00000000000000
+        0140397                                                                      202406040011944715                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  129.  RT20240604000993 SAUDARA SENDIRI                          0000000000000002         1.240.100,00 T9892955402AA03C T9892955402AA03C 06/04/2024 NO.REK TDK TERDAFTAR               00000000000000
+        0140397                                                                      202406040011944803                                                                        Reversal/Retur  7       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  130.  RT20240604001164 SAUDARA SENDIRI                          0000000000000002        18.761.788,00 T989295540AE8542 T989295540AE8542 06/04/2024 NO.REK TDK TERDAFTAR               00000000000000
+        0140397                                                                      202406040011945298                                                                        Reversal/Retur  8       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  131.  RT20240604001212 SAUDARA SENDIRI                          0000000000000002         4.500.000,00 T9892955411319F6 T9892955411319F6 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011945472                                                                        Reversal/Retur  8       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  132.  RT20240604001232 SAUDARA SENDIRI                          0000000000000002           400.000,00 T9892955412EDA27 T9892955412EDA27 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011945533                                                                        Reversal/Retur  8       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\=
+P
+
+  GPT. Bank Negara Indonesia (Persero) Tbk.H                                                          GLaporan Berdasarkan Kode PostingH                                                                                Tgl: 05/06/2024
+  Halaman     : 12                                                                                   Tanggal Transaksi : 04/06/2024                                                                                 Jam: 11:32:54
+                                                                                                                                                                                                                    Usr: ida-27656
+
+  GPosting   :H      13   - RETUR MASUK DI TOLAK
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GNo.H   GRef No.H          GPenerima (DKE)H                           GRekening AsliH      G           NominalH GKeteranganH                                                                                     GNilai 1H          GNilai 2H
+        GKode KliringH     GPenerima (CIF)H                           GRekening InputH     GSORH                GAlasan DitolakH                                                         GTCH              GPeriodeH GResidensialH      GWarganegaraH
+                         GPengirimH                                 GPetugas VerifikasiH GPetugas OtorisasiH  GKode Posting AwalH                               GStatus Auto KreditH     GKode Posting AutoKreditH
+    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  133.  RT20240604001235 SAUDARA SENDIRI                          0000000000000002         2.059.346,00 T989295541306BFE T989295541306BFE 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011945533                                                                        Reversal/Retur  8       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  134.  RT20240604001236 SAUDARA SENDIRI                          0000000000000002         2.059.346,00 T989295541306C0E T989295541306C0E 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011945533                                                                        Reversal/Retur  8       Penduduk         WNI
+                         KAMI SENDIRI                             Ais-31946
+
+  135.  RT20240604001261 SAUDARA SENDIRI                          0000000000000002           160.000,00 T9892955413BF348 T9892955413BF348 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011945640                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  136.  RT20240604001336 SAUDARA SENDIRI                          0000000000000002           371.887,00 T989295541A8768B T989295541A8768B 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011945742                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAMI SENDIRI                             ida-27656
+
+  137.  RT20240604001337 SAUDARA SENDIRI                          0000000000000002           375.844,00 T989295541A876A2 T989295541A876A2 06/04/2024 NAMA DAN REK BEDA                  00000000000000
+        0140397                                                                      202406040011945742                                                                        Reversal/Retur  9       Penduduk         WNI
+                         KAMI SENDIRI                             NURI-23723
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                                                        GTotal :H      G137 Lembar H   G    6.089.149.734,00H
+
+
+
+
+
+
+                                                                                                                                                                                G          Pejabat Yang Berwenang           H
+
+
+
+
+
+                                                                                                                                                                                G  (....................................)   H
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+

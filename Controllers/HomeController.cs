@@ -204,68 +204,68 @@ namespace TechnicalTestBungosariNo4.Controllers
                     cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
 
                     //ValueDate
-                    cell = row.AddCell();
-                    textRange = cell.AddParagraph().AppendText(item.ValueDate?.ToString() ?? ("-"));
-                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-                    textRange.CharacterFormat.FontName = "Calibri";
-                    textRange.CharacterFormat.FontSize = 8;
-                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(item.ValueDate?.ToString() ?? ("-"));
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
 
-                    //DepotId
-                    cell = row.AddCell();
-                    textRange = cell.AddParagraph().AppendText(item.DepotId?.ToString() ?? "-");
-                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-                    textRange.CharacterFormat.FontName = "Calibri";
-                    textRange.CharacterFormat.FontSize = 8;
-                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+                    ////DepotId
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(item.DepotId?.ToString() ?? "-");
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
 
-                    //AccountId
-                    cell = row.AddCell();
-                    textRange = cell.AddParagraph().AppendText(item.NamaRekKredit.ToString());
-                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-                    textRange.CharacterFormat.FontName = "Calibri";
-                    textRange.CharacterFormat.FontSize = 8;
-                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+                    ////AccountId
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(item.NamaRekKredit.ToString());
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
 
-                    //BaseSecurityId
-                    cell = row.AddCell();
-                    textRange = cell.AddParagraph().AppendText(item.BestSecurityId?.ToString() ?? "-");
-                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-                    textRange.CharacterFormat.FontName = "Calibri";
-                    textRange.CharacterFormat.FontSize = 8;
-                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+                    ////BaseSecurityId
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(item.BestSecurityId?.ToString() ?? "-");
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
 
-                    //ExercisedQty
-                    cell = row.AddCell();
-                    textRange = cell.AddParagraph().AppendText(item.ExerciseQty.Value.ToString("#,##0"));
-                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-                    textRange.CharacterFormat.FontName = "Calibri";
-                    textRange.CharacterFormat.FontSize = 8;
-                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+                    ////ExercisedQty
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(item.ExerciseQty.Value.ToString("#,##0"));
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
 
-                    //GrossAmount
-                    cell = row.AddCell();
-                    textRange = cell.AddParagraph().AppendText(Convert.ToInt64(item.NominalInstruksi).ToString("#,##0"));
-                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-                    textRange.CharacterFormat.FontName = "Calibri";
-                    textRange.CharacterFormat.FontSize = 8;
-                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+                    ////GrossAmount
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(Convert.ToInt64(item.NominalInstruksi).ToString("#,##0"));
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
 
-                    //TaxAmount
-                    cell = row.AddCell();
-                    textRange = cell.AddParagraph().AppendText(Convert.ToInt64(item.TaxAmount).ToString("#,##0"));
-                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-                    textRange.CharacterFormat.FontName = "Calibri";
-                    textRange.CharacterFormat.FontSize = 8;
-                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+                    ////TaxAmount
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText(Convert.ToInt64(item.TaxAmount).ToString("#,##0"));
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
 
-                    //NetAmount
-                    cell = row.AddCell();
-                    textRange = cell.AddParagraph().AppendText((Convert.ToInt64(item.NominalInstruksi) - (Convert.ToInt64(item.TaxAmount))).ToString("#,##0"));
-                    textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
-                    textRange.CharacterFormat.FontName = "Calibri";
-                    textRange.CharacterFormat.FontSize = 8;
-                    cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
+                    ////NetAmount
+                    //cell = row.AddCell();
+                    //textRange = cell.AddParagraph().AppendText((Convert.ToInt64(item.NominalInstruksi) - (Convert.ToInt64(item.TaxAmount))).ToString("#,##0"));
+                    //textRange.OwnerParagraph.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left;
+                    //textRange.CharacterFormat.FontName = "Calibri";
+                    //textRange.CharacterFormat.FontSize = 8;
+                    //cell.CellFormat.VerticalAlignment = VerticalAlignment.Middle;
                 }
 
                 document.Replace("%TANGGAL%", DateTime.Now.Day.ToString(), false, true);
@@ -279,10 +279,9 @@ namespace TechnicalTestBungosariNo4.Controllers
                 stream.Position = 0;
                 pdfDoc.Close(true);
                 document.Close();
-                imageStream.Close();
-                imageStream2.Close();
+                
                 string contentType = "application/pdf";
-                string filenamed = "Attachment_Kupon_" + namaPerusahaans + DateTime.Now.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("id-ID")) + ".pdf";
+                string filenamed = "Attachment_Kupon_"  + DateTime.Now.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("id-ID")) + ".pdf";
                 return File(stream, contentType, filenamed);
 
             }
